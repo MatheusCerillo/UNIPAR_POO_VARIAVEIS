@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner (System.in);
+        
+        double valorCel = 0.0 ;
+        
+        System.out.println("Informe a temperatura em Celsius para conversao");
+        valorCel = scanner.nextDouble();
+    
+        double valorConvertido = (valorCel * 9/5) + 32 ;
+        
+        System.out.println("O valor em Fahrenheit eh  " + valorConvertido);
+        
+        scanner.close();
+        }
+}
