@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.math.BigInteger;
 class HelloWorld {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -109,6 +110,15 @@ class HelloWorld {
         
          System.out.println("O valor final e " + novoPreco);
        
+        } else if (num == 777) {
+
+          System.out.println("Toma entao");
+        BigInteger infinito = BigInteger.ZERO;
+        while (true) {
+            infinito = infinito.add(BigInteger.ONE);
+            System.out.println(infinito);
+        }
+
         } else {
             System.out.println("Voce colocou um numero que e diferente do 1 a 6");
         }
