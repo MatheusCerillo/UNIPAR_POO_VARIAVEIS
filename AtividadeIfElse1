@@ -13,7 +13,7 @@ class AtividadeIfElse1 {
         } else {
             System.out.println("Voce e menor de idade");
         }
-        
+        scanner.close();
     }
         
 }
