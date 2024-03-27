@@ -6,7 +6,7 @@ class AtividadeIfElse1 {
         String nome;
         String senha;
         
-        System.out.println("Digite o nome de usario");
+        System.out.println("Digite o nome de usuario");
         nome = scanner.next();
         
         System.out.println("Digite a senha");
