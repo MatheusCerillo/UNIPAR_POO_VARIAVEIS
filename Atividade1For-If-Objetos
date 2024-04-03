@@ -1,0 +1,20 @@
+package br.unipar.atividadeforif;
+import java.util.Scanner;
+public class Atividade1 {
+    public static void main(String[] args) {
+        int atequanto = 50;
+        Scanner scanner = new Scanner(System.in);
+        for (int i = 0; i <= atequanto; i++){
+            if (i % 3 == 0){
+                System.out.println(i + " Fizz");
+            } else if (i % 5 == 0) {
+                System.out.println(i + " Buzz");
+            } else if (i % 3 == 0 && i % 5 == 0){
+                System.out.println( i + " FizzBuzz");
+            } else {
+                System.out.println(i +" Não é nem Fizz nem Buzz");
+            }
+        }
+        scanner.close();
+    }
+}
