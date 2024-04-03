@@ -1,0 +1,27 @@
+package br.unipar.atividadeforif;
+import java.util.Scanner;
+public class Atividade2 {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Insira o numero de patinhos");
+            int numeroPatinhos = scanner.nextInt();
+            if (numeroPatinhos <= 0){
+            System.out.println("Insira um numero positivo");
+            } else {
+                for (int i = numeroPatinhos; i >= 0; i--){
+                    if (i > 0){
+                        System.out.println(i + " Patinhos foram passear");
+                        System.out.println("Além das montanhas Para brincar");
+                        System.out.println("A mamãe gritou: Quá, quá, quá, quá");
+                        System.out.println("Mas só "+ (i - 1) +" patinhos voltaram de lá");
+                    }else {
+                        System.out.println("A mamãe patinha foi procurar");
+                        System.out.println("Além das montanhas Na beira do mar");
+                        System.out.println("A mamãe gritou: Quá, quá, quá, quá");
+                        System.out.println("E os " +  numeroPatinhos + " patinhos voltaram de lá.");
+                    }
+                }
+            }
+            scanner.close();
+        }
+        }
