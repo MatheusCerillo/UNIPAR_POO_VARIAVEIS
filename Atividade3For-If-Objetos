@@ -1,0 +1,17 @@
+package br.nakas.atividadesforif;
+import java.util.Scanner;
+public class Atividade3 {
+    public static void main(String[] args) {
+        System.out.println("Digite a sua idade em anos, meses e dias, (Ex: 3 'anos', 2 'meses' e 15 'dias' = 1170 dias) Começando por anos, meses e por ulitmo dias, que ela sera convertida em dias como no exemplo");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite a quantidade de Anos");
+        int anos = sc.nextInt();
+        System.out.println("Digite a quantidade de meses: ");
+        int meses = sc.nextInt();
+        System.out.println("Digite a quantidade de dias: ");
+        int dias = sc.nextInt();
+        int total = dias + ( (meses * 30) + (anos * 365));
+        System.out.println(total);
+        sc.close();
+    }
+}
