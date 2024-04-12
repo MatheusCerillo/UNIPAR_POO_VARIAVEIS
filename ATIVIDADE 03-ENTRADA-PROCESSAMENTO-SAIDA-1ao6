@@ -1,0 +1,127 @@
+import java.util.Scanner;
+import java.math.BigInteger;
+class Primeira_A_Ultima {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int num = 0;
+
+        System.out.println("Informe um numero de 1 a 6, cada numero tera uma conta diferente");
+        num = scanner.nextInt();
+
+        if (num == 1){
+            System.out.println("Faca um sistema que peca 3 valores some os 3 e mostre o total;");
+            double valor1 = 0.0;
+            double valor2 = 0.0;
+            double valor3 = 0.0;
+            System.out.println("informe o valor 1");
+            valor1 = scanner.nextDouble();
+            System.out.println("informe o valor 2");
+            valor2 = scanner.nextDouble();
+            System.out.println("informe o valor 3");
+            valor3 = scanner.nextDouble();
+
+            double soma = valor1 + valor2 + valor3;
+            System.out.println("O valor total e: " + soma);
+
+        } else if(num == 2){
+            System.out.println("Faca um sistema que peca 2 valores e faca uma subtracao.");
+            double valor1 = 0.0;
+            double valor2 = 0.0;
+
+            System.out.println("informe o valor 1");
+            valor1 = scanner.nextDouble();
+            System.out.println("informe o valor 2");
+            valor2 = scanner.nextDouble();
+
+
+            double resultado = valor1 - valor2;
+            System.out.println("O valor total e: " + resultado);
+
+        } else if(num == 3){
+
+            System.out.println("Faca um sistema que peca 2 notas para o usuario some as duas e divida por 2;");
+            double valor1 = 0.0;
+            double valor2 = 0.0;
+
+            System.out.println("informe o valor 1");
+            valor1 = scanner.nextDouble();
+            System.out.println("informe o valor 2");
+            valor2 = scanner.nextDouble();
+
+            double resultado =  (valor1 + valor2) / 2;
+            System.out.println("O valor total e: " + resultado);
+
+        } else if(num == 4){
+            System.out.println("Faca um sistema que peca 4 notas divida por 4;");
+            double valor1 = 0.0;
+            double valor2 = 0.0;
+            double valor3 = 0.0;
+            double valor4 = 0.0;
+
+            System.out.println("informe a primeira nota");
+            valor1 = scanner.nextDouble();
+            System.out.println("informe a segunda nota");
+            valor2 = scanner.nextDouble();
+            System.out.println("informe a terceira nota");
+            valor3 = scanner.nextDouble();
+            System.out.println("informe a quarta nota");
+            valor4 = scanner.nextDouble();
+
+            double resultado = (valor1 + valor2 + valor3 + valor4) / 4;
+            System.out.println("A nota foi de: " + resultado);
+
+        } else if(num == 5){
+            System.out.println("Faca um sistema que o usuario vai informar 2 numeros e o sistema deve retornar a soma, subtracao, divisao e multiplicacao dos dois numeros.");
+            double valor1 = 0.0;
+            double valor2 = 0.0;
+
+
+            System.out.println("informe o valor 1");
+            valor1 = scanner.nextDouble();
+            System.out.println("informe o valor 2");
+            valor2 = scanner.nextDouble();
+
+
+            double soma = valor1 + valor2;
+            double subtracao = valor1 - valor2;
+            double divi = valor1 / valor2;
+            double multi = valor1 * valor2;
+            System.out.println("O valor da soma e: " + soma);
+            System.out.println("O valor da subtracao e: " + subtracao);
+            System.out.println("O valor da divisao e: " + divi);
+            System.out.println("O valor da multiplicacao e: " + multi);
+
+        } else if(num == 6){
+            System.out.println("Faca um sistema que pergunte para o usuario o nome, preco de produto, apos isso pergunte qual o percentual de desconto, a saida precisa ser o nome do produto e o novo preco.");
+            String nome;
+            double preco = 0.0;
+            double desconto = 0.0;
+
+            System.out.println("Informe o nome do produto");
+            nome = scanner.next();
+            System.out.println("Informe o Preco");
+            preco = scanner.nextDouble();
+            System.out.println("Informe o desconto");
+            desconto = scanner.nextDouble();
+
+            double percentual = desconto / 100;
+
+            double novoPreco = preco - (percentual * preco);
+
+            System.out.println("O nome do produto: " + nome);
+            System.out.println("O novo preço é de: " + novoPreco);
+
+        } else if (num == 777) {
+            System.out.println("É brincadeira professor hehe");
+            BigInteger infinito = BigInteger.ZERO;
+            while (true) {
+                infinito = infinito.add(BigInteger.ONE);
+                System.out.println(infinito +"\uD83E\uDD23");
+            }
+        } else {
+            System.out.println("Voce colocou um numero que e diferente do 1 a 6");
+        }
+        scanner.close();
+
+    }
+}
