@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class AtividadeIfElse1 {
+class AtividadeIfElse2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
