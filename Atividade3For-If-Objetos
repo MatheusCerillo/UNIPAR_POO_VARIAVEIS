@@ -10,7 +10,7 @@ public class Atividade3 {
         System.out.println("Digite a quantidade de dias: ");
         int dias = sc.nextInt();
         int total = dias + ( (meses * 30) + (anos * 365));
-        System.out.println(total);
+        System.out.println("Sua idade em anos é: " + total);
         sc.close();
     }
 }
