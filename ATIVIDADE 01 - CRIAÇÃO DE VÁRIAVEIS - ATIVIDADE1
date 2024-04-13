@@ -10,7 +10,7 @@ public class Atividade1 {
         float numeroVariavel = 1.4f;
         byte numeroPequeno = 127;
         short numeroCurto = 1234;
-        int[] numeros = {1,2};
+        int[] numeros = {1,2};//lembrando que o vetor começa pelo 0 em sequencia
         //Exemplos de usos
         System.out.println("Numero Inteiro: " + numInteiro);
         System.out.println("Numero Decimal: " + numeroDecimal);
