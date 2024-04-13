@@ -1,0 +1,29 @@
+public class Atividade2 {
+    public static void main(String[] args) {
+        // Nomes corrigidos seguindo o padrão camelCase
+        String nomeProduto1 = "nome do produto";
+        double precoProduto = 0.0; // Note que removi o símbolo '%' do nome
+        String marcaDoProduto = "marca do produto";
+        int quantidadeProduto = 0;
+        String descricaoProduto = "_descricaoProduto";
+        String nomeProduto = "NomeProduto";
+        int numeroProduto123 = 0; // Note que removi o começo '123_' do nome
+        double precoDoProduto = 0.0;
+        int estoqueDisponivel = 0;
+        int totalDeProdutosEmJava = 0; // Note que modifiquei o texto "EM JAVA" para ficar no formato camelCase
+
+
+        // Exemplo de uso
+        System.out.println("Nome do produto: " + nomeProduto1);
+        System.out.println("Preço do produto: " + precoProduto);
+        System.out.println("Marca do produto: " + marcaDoProduto);
+        System.out.println("Quantidade de produto: " + quantidadeProduto);
+        System.out.println("Descrição do produto: " + descricaoProduto);
+        System.out.println("Nome do produto: " + nomeProduto);
+        System.out.println("Número do produto: " + numeroProduto123);
+        System.out.println("Preço do produto: " + precoDoProduto);
+        System.out.println("Estoque disponível: " + estoqueDisponivel);
+        System.out.println("Total de produtos em Java: " + totalDeProdutosEmJava);
+        
+    }
+}
