@@ -1,0 +1,24 @@
+public class Atividade3 {
+    public static void main(String[] args) {
+        // Variáveis declaradas para armazenar informações sobre um aluno
+        String nomeDoAluno = ""; // Variável para armazenar o nome do aluno (texto)
+        int idadeDoAluno = 0; // Variável para armazenar a idade do aluno (inteiro)
+        double notaProva1 = 0.0; // Variável para armazenar a nota da primeira prova (decimal)
+        double notaProva2 = 0.0; // Variável para armazenar a nota da segunda prova (decimal)
+        double mediaFinal = 0.0; // Variável para armazenar a média final das notas (decimal)
+
+        // Exemplo de uso
+        nomeDoAluno = "Matheus";
+        idadeDoAluno = 19;
+        notaProva1 = 10;
+        notaProva2 = 7.5;
+        mediaFinal = (notaProva1 + notaProva2) / 2;
+
+        // Exibir informações
+        System.out.println("Nome do aluno: " + nomeDoAluno);
+        System.out.println("Idade do aluno: " + idadeDoAluno);
+        System.out.println("Nota da prova 1: " + notaProva1);
+        System.out.println("Nota da prova 2: " + notaProva2);
+        System.out.println("Média final: " + mediaFinal);
+    }
+}
