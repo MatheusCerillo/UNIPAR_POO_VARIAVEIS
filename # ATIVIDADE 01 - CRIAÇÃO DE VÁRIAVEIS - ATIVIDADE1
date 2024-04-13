@@ -1,0 +1,27 @@
+public class Atividade1 {
+    public static void main(String[] args) {
+        //Variaveis
+        int numInteiro = 5;
+        double numeroDecimal = 5.2;
+        String nome = "matheus";
+        boolean verdadeiro = true;
+        char sexo = 'M';
+        long numeroLongo = 100000000;
+        float numeroVariavel = 1.4f;
+        byte numeroPequeno = 127;
+        short numeroCurto = 1234;
+        int[] numeros = {1,2};
+        //Exemplos de usos
+        System.out.println("Numero Inteiro: " + numInteiro);
+        System.out.println("Numero Decimal: " + numeroDecimal);
+        System.out.println("Numero Longo: " + numeroLongo);
+        System.out.println("Numero Variavel: " + numeroVariavel);
+        System.out.println("Numero Pequeno: " + numeroPequeno);
+        System.out.println("Numero Curto: " + numeroCurto);
+        System.out.println("Caracter unico: " + sexo);
+        System.out.println("Condicao: " + verdadeiro);
+        System.out.println("Linha de texto: " + nome);
+        System.out.println("Array "+ numeros[0]);
+        System.out.println("Array "+ numeros[1]);
+    }
+}
