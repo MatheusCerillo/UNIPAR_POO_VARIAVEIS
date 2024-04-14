@@ -1,0 +1,24 @@
+public class Atividade7 {
+    public static void main(String[] args) {
+
+        String nomeProduto;
+        double precoProduto;
+        int quantidadeProduto;
+
+        nomeProduto = "Fone de Ouvido"; //Ajustando o nome, colocando letras em vez de números pois essa variavel diz o nome do produto
+        precoProduto = 29.99; //Trocando de String "" pra numeros ja que essa vairavel dita o preço do produto em numeros
+        quantidadeProduto = 10; //Trocando de String "" pra numeros ja que essa variavel dita a quantidade em numeros
+
+        String marcaProduto;
+        marcaProduto = "Marca Y"; //Inicialização da variável com uma string representando a marca
+
+        //Retirando a variavel 1nomeProduto ja que não é necessaria
+        //Retirando a variavel duplicada
+
+        System.out.println("Dados do Produto:");//Colocando o ":" dentro da ""
+        System.out.println("Nome: " + nomeProduto);//Adicionando ; para terminar o processo
+        System.out.println("Marca: " + marcaProduto);
+        System.out.println("Preço: $" + precoProduto);
+        System.out.println("Quantidade em estoque: " + quantidadeProduto);
+    }
+}
