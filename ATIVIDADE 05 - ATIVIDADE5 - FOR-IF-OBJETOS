@@ -1,0 +1,77 @@
+import java.util.Scanner;
+class Carro {
+
+    String marca = "Mercedez";
+    String modelo = "Benz";
+    int ano = 2020;
+    String placa = "ABC123";
+
+
+    public Carro() {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.ano = ano;
+        this.placa = placa;
+    }
+
+    public void exibirInfo() {
+        System.out.println("Marca: " + marca);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Ano: " + ano);
+        System.out.println("Placa: " + placa);
+    }
+
+    public void ligar(){
+        System.out.println("Ligando...");
+    }
+
+    public void acelerar(){
+        System.out.println("Acelerando...");
+    }
+
+    public void frear(){
+        System.out.println("Freando...");
+    }
+
+}
+
+ class CarroFuncionando {
+    public static void main(String[] args) {
+        Carro meuCarro = new Carro();
+        Scanner sc = new Scanner(System.in);
+
+        int opcao = 0;
+
+        System.out.println("Para ver as informações do carro digite 1");
+        opcao = sc.nextInt();
+
+            switch (opcao) {
+                case 1:
+                    System.out.println("Informalções do carro");
+                    meuCarro.exibirInfo();
+                    System.out.println();
+                    System.out.println("Se deseja ligar o carro digite 1, se não digite 0");
+                    int opcao2 = sc.nextInt();
+                    switch (opcao2) {
+                        case 1:
+                            meuCarro.ligar();
+                            System.out.println();
+                            System.out.println("Se deseja acelerar digite 1");
+                            System.out.println("Se deseja frear digite 2");
+                            int opcao3 = sc.nextInt();
+                            switch (opcao3) {
+                                case 1:
+                                    meuCarro.acelerar();
+                                    break;
+                                case 2:
+                                    meuCarro.frear();
+                                    break;
+                            }
+                        case 0:
+                            break;
+                    }
+
+            }
+        }
+    }
+
