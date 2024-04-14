@@ -1,0 +1,15 @@
+public class Atividade6 {
+    public static void main(String[] args) {
+        // Declaração e inicialização das variáveis
+        int numeroProduto = 123; // Alterado para um número inteiro
+        double precoProduto = 25.0; // Alterado para um número decimal
+        String descricaoProduto; // Declaração da variável sem inicialização
+        // Atribuindo um valor à variável descricaoProduto
+        descricaoProduto = "Fone de ouvido Bluetooth";
+        // Exibindo os dados do produto no console
+        System.out.println("Dados do Produto:");
+        System.out.println("Número: " + numeroProduto); // Corrigido o nome da variável para 'numeroProduto'
+        System.out.println("Preço: $" + precoProduto);
+        System.out.println("Descrição: " + descricaoProduto);
+    }
+}
