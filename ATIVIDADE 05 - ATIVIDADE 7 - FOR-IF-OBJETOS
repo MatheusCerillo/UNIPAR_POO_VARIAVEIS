@@ -1,0 +1,46 @@
+public class Produto {
+    private int codigo;
+    private String descricao;
+    private double preco;
+    private int quantidadeEmEstoque;
+
+    public Produto(int codigo, String descricao, double preco, int quantidade) {
+        this.codigo = codigo;
+        this.descricao = descricao;
+        this.preco = preco;
+        this.quantidadeEmEstoque = quantidade;
+    }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+    public double getPreco() {
+        return preco;
+    }
+    public int getQuantidadeEmEstoque() {
+        return quantidadeEmEstoque;
+    }
+
+    public void adicionarEstoque(int quantidade) {
+        if (quantidade > 0) {
+            this.quantidadeEmEstoque += quantidade;
+            System.out.println("Estoque de: "+descricao+"adicionado com sucesso!");
+        } else {
+            System.out.println("Quantidade não suficiente");
+        }
+    }
+
+    public void removerEstoque(int quantidade) {
+        if (quantidade > 0) {
+            this.quantidadeEmEstoque -= quantidade;
+            System.out.println("Estoque de: "+descricao+"removida com sucesso!");
+        } else {
+            System.out.println("Quantidade insuficiente");
+        }
+    }
+
+}
