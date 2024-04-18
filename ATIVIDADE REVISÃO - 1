@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Carro {
     private String marca;
     private String modelo;
@@ -41,29 +43,39 @@ public class Carro {
         System.out.println("Modelo: " + modelo);
         System.out.println("Cor: " + cor);
         System.out.println("Ano: " + ano);
-}
+    }
 
+
+
+}
 class Main {
     public static void main(String[] args) {
-        // Criando objetos da classe Carro
         Carro carro1 = new Carro("Toyota", "Corolla", "Prata", 2020);
         Carro carro2 = new Carro("Honda", "Civic", "Azul", 2020);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Informe 1 para Informações do Toyota");
+        System.out.println("Informe 2 para Informações do Honda");
+        System.out.println("Informe 3 para Informações do Toyota modificado");
+        int opcao = sc.nextInt();
 
-        // Exibindo as informações dos carros
+
+switch (opcao) {
+    case 1:
         System.out.println("Carro 1:");
         carro1.Informacao();
         System.out.println();
-
+        break;
+    case 2:
         System.out.println("Carro 2:");
         carro2.Informacao();
         System.out.println();
-
-        // Modificando as informações do carro1
+        break;
+    case 3:
         carro1.setAno(2022);
         carro1.setCor("Branco");
-
-        // Exibindo as informações atualizadas do carro1
         System.out.println("Carro 1 (após modificação):");
         carro1.Informacao();
-    }
+        break;
+}
+}
 }
