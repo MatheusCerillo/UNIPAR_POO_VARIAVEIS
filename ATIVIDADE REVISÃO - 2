@@ -1,0 +1,74 @@
+package br.nakas.AtividadeRevisão;
+
+import java.util.Scanner;
+
+public class Produto {
+    private String nome;
+    private double preco;
+    private int quantidade;
+    public Produto(String nome, double preco, int quantidade) {
+        this.nome = nome;
+        this.preco = preco;
+        this.quantidade = quantidade;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+    public int getQuantidade() {
+        return quantidade;
+    }
+    public double getPreco() {
+        return preco;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
+    public void imprimirinformacoes() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Quantidade: " + quantidade);
+        System.out.println("Preco: " + preco);
+    }
+
+}
+
+class TesteProduto{
+    public static void main(String[] args) {
+        Produto produto1 = new Produto("Whey", 20.0, 20);
+        Produto produto2 = new Produto("Tonico", 15.0, 15);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Informe 1 para Informações do Whey");
+        System.out.println("Informe 2 para Informações do Tonico");
+        System.out.println("Informe 3 para Informações do Whey 2");
+        int opcao = sc.nextInt();
+
+        switch(opcao){
+            case 1:
+                System.out.println("Produto 1: ");
+                produto1.imprimirinformacoes();
+                break;
+                case 2:
+                    System.out.println("Produto 2: ");
+                    produto2.imprimirinformacoes();
+                    break;
+                    case 3:
+                        System.out.println("Produto 3: ");
+                        produto2.setNome("Whey");
+                        produto2.setPreco(200.0);
+                        produto2.setQuantidade(25);
+                        produto2.imprimirinformacoes();
+        }
+        sc.close();
+
+
+
+    }
+
+}
