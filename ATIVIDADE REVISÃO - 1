@@ -77,5 +77,6 @@ switch (opcao) {
         carro1.Informacao();
         break;
 }
+sc.close();
 }
 }
